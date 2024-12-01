@@ -1,0 +1,24 @@
+.shop {
+    position: fixed;
+    top: 6px;
+    left: 1325px;
+    margin: 0;
+    padding: 8px 16px;
+    border-bottom-left-radius: 9px;
+
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: #deb887;
+    color: #fff;
+}.backshop {
+    min-height: 98vh;
+    width: 100%;
+    background-color: gainsboro;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+}

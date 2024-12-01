@@ -30,6 +30,15 @@ a {
   gap: 20px;
 }
 
+.lil {
+  position: relative;
+  margin: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
 .grape {
   position: fixed;
   top: 6px;
@@ -106,6 +115,34 @@ a {
   justify-content: center;
   margin: 0 auto;
   gap: 20px;
+}
+
+button {
+  display: inline-flex;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #33aec1;
+  color: #fff;
+  font-size: inherit;
+  cursor: pointer;
+}
+button:hover, button:focus {
+  background-color: #5557d2;
+}
+
+.submit-button {
+  display: inline-flex;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f38721;
+  color: #fff;
+  font-size: inherit;
+  cursor: pointer;
+}
+.submit-button:hover, .submit-button:focus {
+  background-color: #f90803;
 }
 
 .smoked-meat {
@@ -212,4 +249,151 @@ kit-img {
   display: block;
   height: 675px;
   width: 1200px;
+}
+
+.wine {
+  position: fixed;
+  top: 6px;
+  right: 1250px;
+  margin: 0;
+  padding: 8px 16px;
+  border-bottom-left-radius: 9px;
+  font-family: sans-serif;
+  font-size: 15px;
+  background-color: #deb887;
+  color: #fff;
+}
+
+.wina-pgs {
+  position: fixed;
+  top: 6px;
+  left: 225px;
+  margin: 0;
+  padding: 8px 16px;
+  border-bottom-left-radius: 9px;
+  font-family: sans-serif;
+  font-size: 15px;
+  background-color: #deb887;
+  color: #fff;
+}
+
+.wina {
+  position: fixed;
+  top: 6px;
+  left: 225px;
+  margin: 0;
+  padding: 8px 16px;
+  border-bottom-left-radius: 9px;
+  font-family: sans-serif;
+  font-size: 15px;
+  background-color: #deb887;
+  color: #fff;
+}
+
+.wine {
+  position: fixed;
+  top: 6px;
+  right: 1250px;
+  margin: 0;
+  padding: 8px 16px;
+  border-bottom-left-radius: 9px;
+  font-family: sans-serif;
+  font-size: 15px;
+  background-color: #deb887;
+  color: #fff;
+}
+
+[data-modal-open] {
+  position: fixed;
+  color: rgba(39, 151, 192, 0.733);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(52, 49, 61, 0.236);
+  opacity: 1;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: 0;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 300px;
+  min-height: 200px;
+  padding: 15px;
+  background-color: rgba(169, 146, 74, 0.589);
+  transform: translate(-50%, -50%);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+*[tooltip]:hover:after {
+  position: relative;
+  content: attr(tooltip);
+  border: #777;
+  background-color: #aaa;
+  padding: 5px;
+}
+
+[data-modal-open] {
+  color: rgba(232, 19, 19, 0.182);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(22, 221, 211, 0.153);
+  opacity: 1;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: 0;
+  visibility: hidden;
+}
+
+/* .no-scroll {
+  overflow: hidden;
+} */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 500px;
+  min-height: 400px;
+  padding: 15px;
+  background-color: rgb(29, 178, 236);
+  transform: translate(-50%, -50%);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+form {
+  max-width: 300px;
+}
+
+input {
+  padding: 8px;
+  font-family: inherit;
 }/*# sourceMappingURL=style.css.map */

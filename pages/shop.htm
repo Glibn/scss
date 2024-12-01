@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <button
+      class="btn-open"
+      type="button"
+      tooltip="button to give me money and get the product"
+      data-modal-open
+    >
+      buy
+    </button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form>
+          <label>
+            Username
+            <input
+              type="text"
+              name="text"
+              required
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              title="Username must be two words separated by space."
+            />
+          </label>
+          <label>
+            sum
+            <input
+              type="sum"
+              name="sum"
+              required
+              minlength="6"
+              maxlength="24"
+              pattern="100000000$"
+              title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+            />
+          </label>
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
+        <button
+          class="btn"
+          type="button"
+          tooltip="don't close please give me money"
+          data-modal-close
+        >
+          close
+        </button>
+      </div>
+    </div>
+    <script src="../mode.js"></script>
+    <a class="shop" href="../index.html" tooltip="don't back">main</a>
+    <img class="backshop"
+    src=https://cdn.pixabay.com/photo/2024/09/25/15/53/japan-9074037_1280.jpg
+    alt="" />
+  </body>
+</html>

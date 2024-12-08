@@ -2,17 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>shop</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../css/style.css"
+    />
   </head>
   <body>
     <button
-      class="btn-open"
+      class="btn-open tooltip"
       type="button"
-      tooltip="button to give me money and get the product"
       data-modal-open
     >
+      <span class="tooltiptext"
+        >button to give me money and get the
+        product</span
+      >
       buy
     </button>
     <div class="backdrop is-hidden" data-modal>
@@ -40,22 +49,33 @@
               title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
             />
           </label>
-          <button class="submit-button" type="submit">Submit</button>
+          <button
+            class="submit-button"
+            type="submit"
+          >
+            Submit
+          </button>
         </form>
         <button
-          class="btn"
+          class="btn tooltip"
           type="button"
-          tooltip="don't close please give me money"
           data-modal-close
         >
+          <span class="tooltiptext">
+            don't close please give me money</span
+          >
           close
         </button>
       </div>
     </div>
-    <script src="../mode.js"></script>
-    <a class="shop" href="../index.html" tooltip="don't back">main</a>
-    <img class="backshop"
-    src=https://cdn.pixabay.com/photo/2024/09/25/15/53/japan-9074037_1280.jpg
+
+    <a class="shop tooltip" href="../index.html">
+      <span class="tooltiptext">don't back</span
+      >main</a
+    >
+    <img class="back-shop"
+    src=https://cdn.pixabay.com/photo/2023/09/14/16/01/ai-generated-8253254_1280.jpg
     alt="" />
+    <script src="../mode.js"></script>
   </body>
 </html>

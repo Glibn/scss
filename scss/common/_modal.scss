@@ -1,6 +1,6 @@
 [data-modal-open] {
     position: fixed;
-    color: rgba(39, 151, 192, 0.733);
+    color: rgba(254,212,149);
 }
 
 .backdrop {
@@ -72,7 +72,9 @@
     min-width: 500px;
     min-height: 400px;
     padding: 15px;
-    background-color: rgb(29, 178, 236);
+    background-color: rgb(204,
+        191,
+        143);
     transform: translate(-50%, -50%);
 
     .backdrop.is-hidden & {
@@ -93,4 +95,9 @@ form {
 input {
     padding: 8px;
     font-family: inherit;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
 }

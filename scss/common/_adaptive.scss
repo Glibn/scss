@@ -1,0 +1,59 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    .rr {
+        max-width: 100%;
+    }
+
+    .thumb {
+        flex-basis: calc((100% - (2 * 20px)) / 2);
+    }
+
+
+}
+
+.label {
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: border-box;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .rr {
+        max-width: 100%;
+    }
+
+    .thumb {
+        box-sizing: 10%;
+
+    }
+
+
+
+    .barato {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 90%;
+    }
+}
+
+.label {
+    max-width: 100%;
+    box-sizing: 10%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: border-box;
+}
+
+.thumb {
+    flex-basis: calc((100% - (2 * 20px)) / 2);
+}

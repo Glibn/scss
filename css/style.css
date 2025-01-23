@@ -3,12 +3,14 @@
 }
 
 body {
-  background-color: #f9f9fd;
+  background-image: url(https://cdn.pixabay.com/photo/2017/02/11/06/13/still-life-2057102_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img {
   display: block;
-  width: 550px;
+  max-width: 100%;
   height: 550px;
 }
 
@@ -17,12 +19,8 @@ a {
 }
 
 .container {
-  background-image: url(https://cdn.pixabay.com/photo/2017/02/11/06/13/still-life-2057102_1280.jpg);
   min-height: 100vh;
   width: 100%;
-  background-color: gainsboro;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -75,22 +73,22 @@ a {
 }
 
 .grape {
-  position: fixed;
-  top: 6px;
-  left: 500px;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 8px 16px;
   border-bottom-left-radius: 9px;
   font-family: sans-serif;
   font-size: 15px;
   background-color: #deb887;
-  text-shadow: 1px 1px 1px black;
   color: #fff;
 }
 
 .grape-pgs {
   position: fixed;
-  top: 6px;
+  top: 10px;
   left: 500px;
   margin: 0;
   padding: 8px 16px;
@@ -98,13 +96,13 @@ a {
   font-family: sans-serif;
   font-size: 15px;
   background-color: #deb887;
-  text-shadow: 1px 1px 1px black;
   color: #fff;
 }
 
 .kit-pgs {
+  display: flex;
   position: fixed;
-  top: 6px;
+  top: 10px;
   left: 1225px;
   margin: 0;
   padding: 8px 16px;
@@ -112,21 +110,20 @@ a {
   font-family: sans-serif;
   font-size: 15px;
   background-color: #deb887;
-  text-shadow: 1px 1px 1px black;
   color: #fff;
 }
 
 .kiter {
-  position: fixed;
-  top: 6px;
-  left: 1125px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 8px 16px;
   border-bottom-left-radius: 9px;
   font-family: sans-serif;
   font-size: 15px;
   background-color: #deb887;
-  text-shadow: 1px 1px 1px black;
   color: #fff;
 }
 
@@ -147,7 +144,6 @@ a {
   font-size: 15px;
   background-color: #deb887;
   color: #fff;
-  text-shadow: 1px 1px 1px black;
 }
 
 .back-shop {
@@ -192,23 +188,23 @@ button:hover, button:focus {
 }
 
 .smoked-meat {
-  position: fixed;
-  top: 6px;
-  right: 590px;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  justify-content: space-around;
   margin: 0;
   padding: 8px 16px;
   border-bottom-left-radius: 10px;
   font-family: sans-serif;
   font-size: 15px;
   background-color: #deb887;
-  text-shadow: 1px 1px 1px black;
   color: #fff;
   font-weight: 325;
 }
 
 .smoked-meat-pgs {
   position: fixed;
-  top: 6px;
+  top: 10px;
   right: 590px;
   margin: 0;
   padding: 8px 16px;
@@ -216,15 +212,15 @@ button:hover, button:focus {
   font-family: sans-serif;
   font-size: 15px;
   background-color: #deb887;
-  text-shadow: 1px 1px 1px black;
   color: #fff;
   font-weight: 325;
 }
 
 .wine {
-  position: fixed;
+  position: absolute;
   top: 6px;
-  right: 1250px;
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 8px 16px;
   border-bottom-left-radius: 9px;
@@ -235,8 +231,8 @@ button:hover, button:focus {
 }
 
 .wina-pgs {
-  position: fixed;
-  top: 6px;
+  position: absolute;
+  top: 0px;
   left: 225px;
   margin: 0;
   padding: 8px 16px;
@@ -244,21 +240,18 @@ button:hover, button:focus {
   font-family: sans-serif;
   font-size: 15px;
   background-color: #deb887;
-  text-shadow: 1px 1px 1px black;
   color: #fff;
 }
 
 .wina {
-  position: fixed;
-  top: 6px;
-  left: 225px;
+  position: absolute;
+  top: 0px;
   margin: 0;
   padding: 8px 16px;
   border-bottom-left-radius: 9px;
   font-family: sans-serif;
   font-size: 15px;
   background-color: #deb887;
-  text-shadow: 1px 1px 1px black;
   color: #fff;
 }
 
@@ -280,7 +273,7 @@ button:hover, button:focus {
 kit-img {
   display: block;
   height: 675px;
-  width: 1200px;
+  max-width: 100%;
 }
 
 .thumb {
@@ -292,19 +285,6 @@ kit-img {
   background-color: #fff;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   margin-top: 50px;
-}
-
-.thumb > .label {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-  padding: 8px 16px;
-  border-bottom-left-radius: 4px;
-  font-family: sans-serif;
-  font-size: 18px;
-  background-color: #2196f3;
-  color: #fff;
 }
 
 .thumba {
@@ -338,10 +318,6 @@ kit-img {
 a.disabled {
   pointer-events: none;
   cursor: default;
-}
-
-.label {
-  text-shadow: 1px 1px 1px black;
 }
 
 [data-modal-open] {
@@ -459,4 +435,53 @@ label {
     margin-left: 0%;
     width: 10%;
   }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rr {
+    max-width: 100%;
+  }
+  .thumb {
+    flex-basis: calc((100% - 40px) / 2);
+  }
+}
+.label {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: border-box;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .rr {
+    max-width: 100%;
+  }
+  .thumb {
+    box-sizing: 10%;
+  }
+  .barato {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 90%;
+  }
+}
+.label {
+  max-width: 100%;
+  box-sizing: 10%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: border-box;
+}
+
+.thumb {
+  flex-basis: calc((100% - 40px) / 2);
 }/*# sourceMappingURL=style.css.map */

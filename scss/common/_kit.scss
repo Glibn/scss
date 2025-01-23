@@ -1,6 +1,7 @@
 .kit-pgs {
+    display: flex;
     position: fixed;
-    top: 6px;
+    top: 10px;
     left: 1225px;
     margin: 0;
     padding: 8px 16px;
@@ -9,14 +10,15 @@
     font-family: sans-serif;
     font-size: 15px;
     background-color: #deb887;
-    text-shadow: 1px 1px 1px black;
+
     color: #fff;
 }
 
 .kiter {
-    position: fixed;
-    top: 6px;
-    left: 1125px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
     margin: 0;
     padding: 8px 16px;
     border-bottom-left-radius: 9px;
@@ -24,9 +26,10 @@
     font-family: sans-serif;
     font-size: 15px;
     background-color: #deb887;
-    text-shadow: 1px 1px 1px black;
+
     color: #fff;
 }
+
 .kit-img {
     display: block;
     height: 675px;
